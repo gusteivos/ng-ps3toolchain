@@ -33,12 +33,16 @@ For Debian 11 and 12:
 
 For Debian 13:
 
-> In addition to the above, also install `python3-setuptools`.
-
+```bash
+  apt install autoconf automake bison flex gcc libelf-dev make \
+    texinfo libncurses5-dev patch subversion wget zlib1g-dev \
+    libtool libtool-bin bzip2 libgmp3-dev pkg-config g++ libssl-dev \
+    python3 python-is-python3 python3-dev python-dev-is-python3 python3-setuptools
+```
 
 For RedHat distros:
 
-```bash 
+```bash
   sudo dnf install bison flex gcc elfutils-libelf-devel make python path \
   wget zlib-devel libtool python3-devel bzip2 gmp-devel pkg-config gcc \
   openssl-devel texinfo ncurses-devel

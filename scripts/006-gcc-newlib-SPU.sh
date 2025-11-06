@@ -7,7 +7,7 @@ NEWLIB="newlib-1.20.0"
 if [ ! -d ${GCC} ]; then
 
   ## Download the source code.
-  if [ ! -f ${GCC}.tar.xz ]; then ${WGET:-wget -4} --continue https://ftp.gnu.org/gnu/gcc/${GCC}/${GCC}.tar.xz; fi
+  if [ ! -f ${GCC}.tar.xz ]; then ${WGET:-wget -4} --continue https://ftpmirror.gnu.org/gnu/gcc/${GCC}/${GCC}.tar.xz; fi
   if [ ! -f ${NEWLIB}.tar.gz ]; then ${WGET:-wget -4} --continue https://sourceware.org/pub/newlib/${NEWLIB}.tar.gz; fi
 
   ## Unpack the source code.

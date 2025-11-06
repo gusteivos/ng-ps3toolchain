@@ -6,7 +6,7 @@ BINUTILS="binutils-2.22"
 if [ ! -d ${BINUTILS} ]; then
 
   ## Download the source code.
-  if [ ! -f ${BINUTILS}.tar.bz2 ]; then ${WGET:-wget -4} --continue https://ftp.gnu.org/gnu/binutils/${BINUTILS}.tar.bz2; fi
+  if [ ! -f ${BINUTILS}.tar.bz2 ]; then ${WGET:-wget -4} --continue https://ftpmirror.gnu.org/gnu/binutils/${BINUTILS}.tar.bz2; fi
 
   ## Download an up-to-date config.guess and config.sub
   if [ ! -f config.guess ]; then ${WGET:-wget -4} --continue https://git.savannah.gnu.org/cgit/config.git/plain/config.guess; fi
